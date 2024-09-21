@@ -1,14 +1,13 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 12px;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: #191970; /* midnight blue */
-    color: #89CFF0; /* baby blue */
+    background: #333
+    color: #FFF
     padding: 1rem 0;
     text-align: center;
 }
@@ -32,8 +31,9 @@ main {
     padding: 20px;
 }
 
-h1, h2 {
-    color: #191970; /* midnight blue */
+h1, h2, h3 {
+    color: #89CFF0;
+    font: 600 Georgia, 'Times New Roman', Times, serif;
 }
 
 img {
