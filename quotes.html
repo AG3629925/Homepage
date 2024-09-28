@@ -10,16 +10,25 @@
   <p id="quote"></p>
   <script>
     // Array for 5 quotes
-    var qoutes =["True terror is to wake up one morning and discover that your high school class is running the country.",
-                 "", 
-                 "",
-                 "",
-                 "",
-                 ];
+    var qoutes =["You can totaly do this.", "Impossible is for the unwilling.", "No presure, no diamonds.", 
+                 "Take the risk or lose the chance.", "If it maters to you, you'll find a way."];
+   
     // Prompt for user number + dived by 5
     var iserNumber = parseInt(promt("Enter a number:"));
     var quoteIndex = userNuber % quotes.length;
 
+    //Array of websites
+    var websites = [<a href='https://www.jw.org'>JW.ORG</a> ", "<a href='https://www.youtube.com'>YouTube Page</a> ", "<a href='https://www.reddit.com'>Reddit Page</a>];
+    showWebsites();
+
+    //Prompt user for favorite website
+    var favoriteWebisite = prompt("Please Enter Your Favorite Webiste URL:");
+    websites.shift();
+
+    //Delete 1st website 
+    website.shift();
+    displayWebsites();
     
   </script>
 </body>
+</html>
