@@ -1,4 +1,4 @@
-<!Doctype html?
+<!Doctype html>
 <html lang="en">
   <head>
     <meta charset= "UTF-8">
@@ -8,6 +8,8 @@
 <body>
   <h1>Quotes</h1>
   <p id="quote"></p>
+  <div id="websites"></div>
+  
   <script>
     // Array for 5 quotes
     var quotes =["You can totally do this.", "Impossible is for the unwilling.", "No pressure, no diamonds.", 
@@ -16,20 +18,19 @@
     // Prompt for user number + divided by 5
     var userNumber = parseInt(prompt("Enter a number:"));
     var quoteIndex = userNumber % quotes.length;
+    document.write("<p>" + quotes[quotesIndex] + "</p>");
 
     //Array of websites
     var websites = [<a href='https://www.jw.org'>JW.ORG</a> ", "<a href='https://www.youtube.com'>YouTube Page</a> ", "<a href='https://www.reddit.com'>Reddit Page</a>];
-    document.write(websites);
+    document.write("<div>" + websites.join(" ") + "</div>");
 
     //Prompt user for favorite website
     var favoriteWebsite = prompt("Please Enter Your Favorite Webiste URL:");
-    websites[3]=favoriteWebsite;
-    document.write(websites);
+    websites.push("<a href= '" + favoriteWebsite + "'>" + favoriteWebsite + "</a>");
 
     //Delete 1st website 
     websites.shift();
-    displayWebsites();
-    
+    document.write("<div>" + website.join(" ") + "</div>");
   </script>
 </body>
 </html>
