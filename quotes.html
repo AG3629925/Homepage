@@ -18,7 +18,7 @@
     // Prompt for user number + divided by 5
     var userNumber = parseInt(prompt("Enter a number:"));
     var quoteIndex = userNumber % quotes.length;
-    document.write("<p>" + quotes[quotesIndex] + "</p>");
+    document.write("<p>" + quotes[quoteIndex] + "</p>");
 
     //Array of websites
     var websites = [<a href='https://www.jw.org'>JW.ORG</a> ", "<a href='https://www.youtube.com'>YouTube Page</a> ", "<a href='https://www.reddit.com'>Reddit Page</a>];
@@ -30,7 +30,7 @@
 
     //Delete 1st website 
     websites.shift();
-    document.write("<div>" + website.join(" ") + "</div>");
+    document.write("<div>" + websites.join(" ") + "</div>");
   </script>
 </body>
 </html>
