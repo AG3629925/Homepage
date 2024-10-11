@@ -22,5 +22,5 @@ function startQuiz() {
       }
     }
   }
-  document.getElementById("score").innerText = `Yor Score Is ${score}`;
+  document.getElementById("score").innerText = `Your Score Is ${score}`;
 } 
