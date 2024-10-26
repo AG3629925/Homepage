@@ -14,6 +14,8 @@ function playGame() {
         questionCounter++;
     } else {
         document.getElementById("prompt").innerHTML = '<button onclick="playGame()">Restart Game</button>';
+        document.getElementById("question").innerText = "";
+        document.getElementById("answers").innerHTML = ""
     }
 }
 
