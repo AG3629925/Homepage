@@ -33,7 +33,7 @@ function checkAnswer(selectedIndex, correctIndex) {
     } else {
         alert("Incorrect!");
     }
-    startGame();
+    playGame();
 }
 
 document.addEventListener("DOMContentLoaded", function() {
