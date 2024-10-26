@@ -7,13 +7,13 @@ var questions = [
 
 var questionCounter = 0;
 
-function startGame() {
+function playGame() {
     if (questions.length > 0) {
         var currentQuestion = questions.shift();
         displayQuestion(currentQuestion);
         questionCounter++;
     } else {
-        document.getElementById("prompt").innerHTML = '<button onclick="startGame()">Restart Game</button>';
+        document.getElementById("prompt").innerHTML = '<button onclick="playGame()">Restart Game</button>';
     }
 }
 
@@ -37,5 +37,5 @@ function checkAnswer(selectedIndex, correctIndex) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("prompt").innerHTML = '<button onclick="startGame()">Start Game</button>';
+    document.getElementById("prompt").innerHTML = '<button onclick="playGame()">Start Game</button>';
 });
