@@ -36,6 +36,7 @@ function checkAnswer(selectedIndex, correctIndex) {
         alert("Incorrect!");
     }
     playGame();
+
 }
 
 document.addEventListener("DOMContentLoaded", function() {
