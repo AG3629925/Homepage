@@ -12,7 +12,7 @@ function startGame() {
     displayQuestion(currentQuestion);
     questionCounter++;
   } else {
-    document.getElementById("prompt").innerHTML = `<button
+    document.getElementById("prompt").innerHTML = `<button onClick="startGame()">Restart Game</button>
   }    
 }  
 function displayQuestion(question) {
@@ -21,5 +21,18 @@ function displayQuestion(question) {
   var answerList = '';
   for (var i = 2; i < question.length; i++) {
     answersList += 
-    
-  
+  }
+  document.getElementById("answers").innerHTML = answerList;
+}
+function checkAnswer(selectedIndex, correctIndex) {
+   if (selectedIndex === correctIndex) {
+      alert("Correct!");
+   } else{
+      alert("Incorrect");
+   }
+
+   startGame();
+}
+document.addEventListener("DOMContentLoaded", function() {
+   document.getElementById("prompt").innerHTML = `<button onClick="startGame()">Start Game</button>
+  });
