@@ -13,7 +13,7 @@ function playGame() {
         displayQuestion(currentQuestion);
         questionCounter++;
     } else {
-        document.getElementById("prompt").innerHTML = '<button onclick="playGame()">Restart Game</button>';
+        document.getElementById("prompt").innerHTML = '<button onclick="restartGame()">Restart Game</button>';
         document.getElementById("question").innerText = "";
         document.getElementById("answers").innerHTML = ""
     }
