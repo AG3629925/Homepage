@@ -1,10 +1,10 @@
 // Multi-dimensional array to store questions, correct answer index, and possible answers
-var questions = [
+var questions1 = [
     ["In what country did the first Starbucks open outside of North America?", 2, "China", "UK", "Japan"],
     ["When was the internet invented?", 1, "1980", "1969", "1995"],
     ["When did Facebook first launch?", 2, "2003", "2005", "2004"]
 ];
-
+var questions = [...questions1]
 var questionCounter = 0;
 
 function playGame() {
@@ -40,8 +40,8 @@ function checkAnswer(selectedIndex, correctIndex) {
 }
 
 function restartGame() {
+    questions = [...questions1];
     questionCounter = 0;
-    score = 0;
     playGame();
 }
 
