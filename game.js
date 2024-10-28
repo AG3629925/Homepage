@@ -39,6 +39,12 @@ function checkAnswer(selectedIndex, correctIndex) {
 
 }
 
+function restartGame() {
+    questionCounter = 0;
+    score = 0;
+    playGame();
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("prompt").innerHTML = '<button onclick="playGame()">Start Game</button>';
 });
