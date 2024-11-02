@@ -11,7 +11,7 @@ $(document).ready(function() {
 "<p><strong>Summer is the TIME</strong><ul><li>Select rose bushes from the huge selection of  varieties we offer.</li><li>Transplants of  peppers, eggplant and tender herbs can be planted.</li><li>Plant fruit trees, shrubs, roses, perennials, herbs and colorful annuals like geraniums and snapdragons.</li></ul>",
 "<p>Fall is the best time to plant in north Texas. Milder temperatures and increased rainfall mean that new plants—especially trees and shrubs—can establish root systems much more easily than during hot summer months.</p><p>Also with the changing season comes the changing of  our color plantings: petunias, dianthus, ornamental kale and mums bringing cheerful color ahead of  winter’s trusted and long-lasting pansies and violas.</p>"];
 // create a specials array
-var specials = ["<p>Don't forget our feathered friends!</p><p>All bird feeders and birdseed are 50% off this January.</p> ",
+  var specials = ["<p>Don't forget our feathered friends!</p><p>All bird feeders and birdseed are 50% off this January.</p> ",
 "<p>Roses for your sweetheart!</p><p>All roses are $24.99 this February.</p>",
 "<p>Add some color to your garden!</p><p>This March all petunias are $10.99 for a flat of 16.</p>",
 "<p>Time to fertilize!</p><p>All fertilizers 20% off.</p>",
@@ -22,4 +22,11 @@ var specials = ["<p>Don't forget our feathered friends!</p><p>All bird feeders a
 "<p>Get ready for fall!<p><p>Mums: 6 inch pot $5.99</p>",
 "<p><strong>Jack-O-Lanterns</strong></p><p>Pumpkins: <br>large $8.99<br>small $5.99<br>Decorative pumpkins: <br>$7.99-11.99<br>Gourds: $6.99</p>",
 "<p>Trees and shrubs: 1/2 price - in stock only.</p>",
-"<p>Christmas trees!</p><p>We have sizes from 3' to 15' and lots of varieties. Find the perfect fit for your family while they last!</p>"];
+"<p>Christmas trees!</p><p>We have sizes from 3' to 15' and lots of varieties. Find the perfect fit for your family while they last!</p>"
+];
+
+var monthName = months[month];
+
+if (month === 11) {
+  $("h2.slogan").after("<h3>Happy Holidays!</h3
+  
