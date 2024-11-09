@@ -25,6 +25,8 @@ $(document).ready(function() {
 
   $(document).keypress(function(evt) {
     var keyPressed = evt.key.toLowerCase();
-    window.location = '#' + keyPressed;
+    if ($('#' + keyPressed).length) {
+      window.location = '#' + keyPressed;
+    }
   });
 });
