@@ -8,7 +8,7 @@ $(document).ready(function() {
     $(this).css('color', '');
   });
 
-  $('.flower').click(function() {
+   $('.flower').click(function() {
     $('.botanic').hide();
     $(this).childern('.botanic').show()
   });
