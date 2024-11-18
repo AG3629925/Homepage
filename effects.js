@@ -22,7 +22,7 @@ $(document).ready(function() {
     $('#rose').animate({right: '100px', opacity:1}, 'slow', 'swing');
    
     $('#newsSignup').submit(function(e) {
-      e.preventDEfault();
+      e.preventDefault();
       alert('Thank you for registering');
       $(this).hide();
       $('#signuplink').fadeTo('slow', 0.3);
