@@ -20,7 +20,7 @@ $(document).ready(function() {
       },
       function() {
         $(this).fadeOut('fast', 'swing', function() {
-          $(this).text('The Power of Flowers'').fadeIn('slow', 'linear');
+          $(this).text('The Power of Flowers').fadeIn('slow', 'linear');
       });
     });
     $('#rose').animate({right: '100px', opacity:1}, 'slow', 'swing');
