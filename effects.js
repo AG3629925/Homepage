@@ -1,11 +1,15 @@
 $(document).ready(function() {
   $('#newsSignup').hide();
 
-  $('#signuplink').click(function(e) {
-    e.preventDefault();
+  $('#signuplink').click(function(event) {
+    event.preventDefault();
     $('#newsSignup').slideToggle();
-    var $openclose = $('#openclose');
-    $openclose.text($openclose.text() === '+' ? '-' : '+');
+    let openCloseSymbol = $('#openclose');
+    if (openCloseSymbol.text() === '+') {
+      openCloseSymbol.text('-');
+    } else {
+      openCloseSymbol.text('+');
+    }
   });
 
   $('#slogan').hover(
@@ -21,8 +25,8 @@ $(document).ready(function() {
     });
     $('#rose').animate({right: '100px', opacity:1}, 'slow', 'swing');
    
-    $('#newsSignup').submit(function(e) {
-      e.preventDefault();
+    $('#newsSignup').submit(function(event) {
+      event.preventDefault();
       alert('Thank you for registering');
       $(this).hide();
       $('#signuplink').fadeTo('slow', 0.3);
