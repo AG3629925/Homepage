@@ -82,18 +82,22 @@ hr {
   font-size: .75em;
 }
 
-.wrapper {
-  border: thin #8fbc8f solid;
-  background-color: cornsilk;
-  border-radius: 15px;
-  padding: .5em 1em;
-  text-align: center;
+#cart-section {
+  text-align:center;
+  padding: 1em;
+  background-color: #f8f8f8;
+}
+
+.cart-wrapper { 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  padding: 10px; 
+  background-color: white; 
+  display: inline-block;
 }
 
 #cart { 
-  text-align: center; 
-  padding: 1em; 
-  background-color: #f8f8f8;
+  text-align: center;
 } 
 
 #cart li { 
