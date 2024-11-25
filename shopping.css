@@ -94,3 +94,18 @@ hr {
     display: block;
     list-style-type: none;
 }
+
+.cart-container {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #2E8B57;
+    border-radius: 10px;
+    background-color: #FAFAD2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cartItem { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
