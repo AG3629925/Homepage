@@ -2,6 +2,16 @@ $(document).ready(function () {
   var itemCount = 0;
   var removeButton  = '<span class="del">Remove</span>';
 
+  function createStarRating(container) {
+    for (var i = 0; i < 5; i++) {
+      $(container).append('<img src="staroff.gif" class="star" alt="star">');
+    }
+  }
+
+  $('.rating').each(function () {
+    createStarRating(this);
+  });
+
   $('.add').click(function () {
     itemCount++;
     $('#empty').hide();
