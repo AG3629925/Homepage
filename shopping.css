@@ -95,17 +95,12 @@ hr {
     list-style-type: none;
 }
 
-#cart-section {
-    position: fixed; /* Keeps the cart at a fixed position */
-    bottom: 20px; /* Position it 20px from the bottom of the screen */
-    left: 50%; /* Center the cart horizontally */
-    transform: translateX(-50%); /* Correct for the left 50% positioning to truly center */
-    background-color: #fff; /* White background */
-    padding: 1em 2em; /* Some padding inside the box */
-    z-index: 100; /* Ensure the cart box appears above other content */
-    width: auto;
-    min-width: 300px; /* Minimum width to prevent it from being too narrow */
-    text-align: center; /* Center the text inside the box */
+.cart-container {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #2E8B57;
+    border-radius: 10px;
+    background-color: beige;
 }
 
 #cart-section h2 {
