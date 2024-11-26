@@ -58,6 +58,7 @@ h1, h2, h3 {
 	border: none;
 	width: 70px;
 	height: auto;
+	transtition: border 0.3s, box-shadow 0.3s;
 }
 #thums img:hover {
 	border: 2px solid darkgreen;
