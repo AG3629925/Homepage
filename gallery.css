@@ -39,6 +39,7 @@ h1, h2, h3 {
 #thumbs {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	margin-top: 10px;
 	flex-wrap: wrap;
 	gap: 10px;
@@ -54,8 +55,8 @@ h1, h2, h3 {
 	margin: 5px;
 	cursor: pointer;
 	border: none;
-	max-width: 100%;
-	max-height: 100px;
+	max-width: 120px;
+	height: auto;
 }
 #thums img:hover {
 	border: 2px solid darkgreen;
