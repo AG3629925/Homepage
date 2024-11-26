@@ -50,18 +50,16 @@ h1, h2, h3 {
 	top: -20px;
 	left: 30px;
 }
-#thumbs img {
-	box-sizing: border-box;
-	padding: 5px;
-	margin: 5px;
-	cursor: pointer;
-	border: none;
-	width: 70px;
-	height: auto;
-	transtition: all 0.3s ease;
-}
-#thums img:hover {
-	border: 2px solid darkgreen;
-	box-shadow: 2px 2px 5px darkgreen;
-	transform: scale(1.1);
+ #thumbs img {
+      max-width: 120px; 
+      height: auto;   
+      cursor: pointer;
+      border: 1px solid red; 
+      transition: all 0.3s ease; 
+ }
+
+#thumbs img:hover {
+      border: 2px solid darkgreen;   
+      box-shadow: 2px 2px 5px darkgreen; /
+      transform: scale(1.1);    
 }
