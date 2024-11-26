@@ -16,13 +16,17 @@ h1, h2, h3 {
 	background-color: rgba(255,255,255,.9);
 	padding: 1em;
 	font-family: Arial, Helvetica, sans-serif;
+	overflow: hidden;
 }
 #gallery {
 	text-align: center;
+	overflow: hidden;
 }
 #lgPic {
 	border: thick groove darkgreen;
 	width: 320px;
+	display: block;
+	margin: 0 auto 10px;
 }
 #imageCaption {
 	font-size: 18px;
@@ -33,6 +37,7 @@ h1, h2, h3 {
 	display: flex;
 	justify-content: center;
 	margin-top: 10px;
+	flex-wrap: wrap;
 }
 #cameo {
 	position: relative;
