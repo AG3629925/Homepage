@@ -11,4 +11,3 @@ $(document).ready(function() {
     window.open(src, '_blank');
   });
 });
-    
