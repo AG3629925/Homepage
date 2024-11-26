@@ -60,6 +60,6 @@ h1, h2, h3 {
 
 #thumbs img:hover {
       border: 2px solid darkgreen;   
-      box-shadow: 2px 2px 5px darkgreen; /
+      box-shadow: 2px 2px 5px darkgreen;
       transform: scale(1.1);    
 }
