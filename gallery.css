@@ -10,7 +10,8 @@ h1, h2, h3 {
 	font-family: "Comic Sans MS";
 }
 #container {
-	width: 50em;
+	width: 80%; 
+	max-width: 50em;
 	margin: 1em auto;
 	border: outset thick darkgreen;
 	background-color: rgba(255,255,255,.9);
@@ -24,6 +25,7 @@ h1, h2, h3 {
 }
 #lgPic {
 	border: thick groove darkgreen;
+	max-width: 100%;
 	width: 320px;
 	display: block;
 	margin: 0 auto 10px;
@@ -32,12 +34,14 @@ h1, h2, h3 {
 	font-size: 18px;
 	margin-bottom: 10px;
 	color: darkgreen;
+	font-weight: bold;
 }
 #thumbs {
 	display: flex;
 	justify-content: center;
 	margin-top: 10px;
 	flex-wrap: wrap;
+	gap: 10px;
 }
 #cameo {
 	position: relative;
@@ -50,8 +54,11 @@ h1, h2, h3 {
 	margin: 5px;
 	cursor: pointer;
 	border: none;
+	max-width: 100%;
+	max-height: 100px;
 }
 #thums img:hover {
 	border: 2px solid darkgreen;
 	box-shadow: 2px 2px 5px #666;
+	transform: scale(1.1);
 }
