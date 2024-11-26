@@ -42,7 +42,8 @@ h1, h2, h3 {
 	align-items: center;
 	margin-top: 10px;
 	flex-wrap: nonwrap;
-	gap: 10px;
+	gap: 7px;
+
 }
 #cameo {
 	position: relative;
@@ -55,7 +56,7 @@ h1, h2, h3 {
 	margin: 5px;
 	cursor: pointer;
 	border: none;
-	width: 80px;
+	width: 70px;
 	height: auto;
 }
 #thums img:hover {
