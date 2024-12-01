@@ -90,9 +90,4 @@ $(document).ready(function () {
       event.preventDefault(); 
     }
   });
-
-  function submitForm(event) {
-    event.preventDefault();
-    window.location.href = "thanks.html";
-  }
 });
