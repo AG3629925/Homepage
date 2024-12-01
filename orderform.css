@@ -1,100 +1,80 @@
 body {
-    background: url('springbg.jpg') no-repeat center center fixed;
+    background: url('springbg.jpg');
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-#container {
-    width: 50em;
-    margin: 1em auto;
-    border: outset thick darkgreen;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1em;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px auto;
+    padding: 20px;
+    width: 500px;
     border-radius: 10px;
 }
 
-header h1, header h2 {
-    color: darkgreen;
+h1, h2, h3 {
     text-align: center;
-    line-height: 0.7em;
-    font-family: "Comic Sans MS";
+    color: green;
 }
 
-nav p {
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-section input, .form-section select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.order-table th, .order-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
     text-align: center;
 }
 
-nav a {
-    color: darkgreen;
+.order-table th {
+    background-color: #f2f2f2;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: darkgreen;
+}
+
+.links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.links a {
+    color: green;
     text-decoration: none;
     margin: 0 10px;
 }
 
-nav a:hover {
+.links a:hover {
     text-decoration: underline;
-}
-
-label {
-    display: inline-block;
-    width: 20em;
-    text-align: right;
-    line-height: 1.5em;
-    padding-right: 1em;
-}
-
-.error {
-    color: red;
-}
-
-table {
-    border: thin solid darkgreen;
-    background-color: cornsilk;
-    border-collapse: collapse;
-    margin: 0 auto;
-    width: 100%;
-}
-
-td, th {
-    padding: 0.25em 1em;
-    border: thin green dotted;
-}
-
-td[id] {
-    text-align: right;
-}
-
-input[type='submit'] {
-    background-color: cornsilk;
-    font-size: 0.8em;
-    border-radius: 5px;
-    border: thin outset darkgreen;
-    display: block;
-    margin: 1em auto;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-input[type='submit']:hover {
-    background-color: #f0e68c;
-}
-
-#place {
-    text-align: center;
-}
-
-#main {
-    clear: left;
-    padding: 1em;
-}
-
-fieldset {
-    margin-bottom: 1em;
-}
-
-h3 {
-    color: darkgreen;
-    font-family: "Comic Sans MS";
-    text-align: center;
 }
