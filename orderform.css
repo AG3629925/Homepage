@@ -1,85 +1,114 @@
 body {
-    background: url('springbg.jpg'); no-repeat center center fixed;
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+	background: url(springbg.jpg);
+	background-size: 100%;
 }
-.container {
-    background-color: rgba(255, 255, 255, 0.8);
-    margin: 2em auto;
-    padding: 20px;
-    width: 500px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#specials {
+	width: 10em;
+	float: right;
+	padding: .5em 1em;
+	border: medium #006400 groove;
+	border-radius: 10px;
+	margin-left: 1em;
 }
-
+#container {
+	width: 50em;
+	margin: 1em auto;
+	border: outset thick darkgreen;
+	background-color: rgba(255,255,255,.9);
+	padding: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow: hidden;
+}
+.error {
+	color: red;
+}
+a:link {
+	color: darkgreen;
+}
+a:visited {
+	color: darkgreen;
+}
+legend {
+	font-family: "Comic Sans MS";
+	color: darkgreen;
+}
 h1, h2, h3 {
-    text-align: center;
-    color: darkgreen;
-    margin: 0.5em 0;
+	color: darkgreen;
+	text-align: center;
+	line-height: .7em;
+	font-family: "Comic Sans MS";
 }
-
-.form-section {
-    margin-bottom: 20px;
+label {
+	display: inline-block;
+	width: 20em;
+	text-align: right;
+	line-height: 1.5em;
+	padding-right: 1em;
 }
-
-.form-section label {
-    display: block;
-    margin-bottom: 5px;
+th[colspan] {
+	text-align: right;
 }
-
-.form-section input, .form-section select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+table {
+	border: thin solid darkgreen;
+	background-color: cornsilk;
+	border-collapse: collapse;
+	margin: 0 auto;
 }
-
-.order-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+td, th {
+	padding: .25em 1em;
+	border: thin green dotted;}
+td[id] {
+	text-align: right;
 }
-
-.order-table th, .order-table td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: center;
+input[type='submit'] {
+	background-color: cornsilk;
+	font-size: .8em;
+	border-radius: 5px;
+	border: thin outset darkgreen;
 }
-
-.order-table th {
-    background-color: #f2f2f2;
+#place {
+	text-align: center;
 }
-
-.submit-btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: darkgreen;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
+#main {clear: left;}
+.Fall {
+	background-image: url(fall.png);
+	background-size: 100% 100%;
+	background-color: cornsilk;
+	text-align: center;
 }
-
-.submit-btn:hover {
-    background-color: darkgreen;
+.Winter {
+	background-color: lightblue;
+	text-align: center;
 }
-
-.links {
-    text-align: center;
-    margin-bottom: 20px;
+.Summer {
+	background-color: #ff9;
+	text-align: center;
 }
-
-.links a {
-    color: green;
-    text-decoration: none;
-    margin: 0 10px;
+.Spring {
+	background-color: #afeeee;
+	text-align: center;
 }
-
-.links a:hover {
-    text-decoration: underline;
+nav {
+	text-align: center;
+}
+#pltTitle {
+	color: #07a;
+}
+.botanic {
+	color: darkgreen;
+	font-style: italic;
+}
+.col {
+	width: 20em;
+	padding: 1em;
+	float: left;
+}
+footer {
+	clear: both;
+}
+.imgdiv {
+	position: absolute;
+}
+.pic {
+	border-bottom: thin dashed darkgreen;
 }
