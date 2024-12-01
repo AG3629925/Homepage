@@ -20,7 +20,7 @@
       </p>
     </nav>
     <div id="main">
-      <form name="order" id="orderForm" method="post" action="thanks.html">
+      <form name="order" id="orderForm" method="post" onsubmit="submitForm(event)">
         <fieldset>
           <legend>Personal Information</legend>
           <p>
@@ -147,5 +147,10 @@
       </form>
     </div>
   </div>
+  <script>
+      function sumbitForm(event) {
+          event.preventDefault();
+          window.location.href = "thanks.html";
+  </script> 
 </body>
 </html>
