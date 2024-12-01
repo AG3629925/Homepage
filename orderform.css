@@ -84,3 +84,16 @@ h1, h2, h3 {
 .links a:hover {
     text-decoration: underline;
 }
+
+legend {
+	font-family: "Comic Sans MS";
+	color: darkgreen;
+}
+
+label {
+	display: inline-block;
+	width: 20em;
+	text-align: right;
+	line-height: 1.5em;
+	padding-right: 1em;
+}
