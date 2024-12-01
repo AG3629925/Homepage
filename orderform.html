@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing the DOM</title>
+    <link rel="stylesheet" href="orderform.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="orderform.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Patti's Posies</h1>
+      <h2>Order Form</h2>
+    </header>
+    <nav>
+      <p>
+        <a href="index.html">Home</a> | <a href="orderform.html">Place an Order</a> | <a href="#">Mums</a> | <a href="#">Pansies</a>
+      </p>
+    </nav>
+    <div id="main">
+      <form name="order" id="orderForm" methond="post" action="thanks.html">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <span id="nameError" class="error"></span><br>
+
+            <label for="address">Billing Address:</label>
+            <input type="text" name="address" id="address" required>
+            <span id="addressError" class="error"></span><br>
+
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" required>
+            <span id="cityError" class="error"></span><br>
+
+            <label for="state">State:</label>
+            <select name="state" id="state">
+              <option value="TX">Texas</option>
+              <option value="OK">Oklahoma</option>
+              <option value="NM">New Mexico</option>
+              <option value="LA">Louisiana</option>
+              <option value="AR">Arkansas</option>
+              <option value="CO">Colorado</option>
+              <option value="CA">California</option>
+              <option value="NY">New York</option>
+            </select>
+            <span id="stateError" class="error"></span><br>
+
+            <label for="zip">Zip Code:</label>
+            <input type="text" name="zip" id="zip" required>
+            <span id="zipError" class="error"></span><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <span id="emailError" class="error"></span><br>
+
+            <label for="email2">Confirm Email:</label>
+            <input type="email" name="email2" id="email2" required>
+            <span id="emailError" class"error"></span><br>            
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Shipping Information</legend>
+          <p>
+            <input type="checkbox" id"copyAddress">Copy Address<br>
+            
+            <label for="shipAddress">Address:</label>
+            <input type="text" name="shipAddress" id="shipAddress" required>
+            <span id="shipAddressEror" class="error"></span><br>
+            
+            <label for="shipCity">City:</label>
+            <input type="text" name="shipCity" id="shipCity" required>
+            <span id="shipCityError" class="error"></span><br>
+            
+            <label for="shipZipcode">Zip Code:</label>
+            <input type="text" name="shipZipcode" id="shipZipcode" required>
+            <span id="shipZipError" class="error"></span>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Order Details</legend>
+          <p>
+            <label for="state">State:</label>
+            <select id="state" name="state">
+              <option value="TX">Texas</option>
+              <option value="CA">California</option>
+              <option value="NY">New York</option>
+              <option value="Other">Other</option>
+            </select><br> 
+            
+            <label for="quantity">Quantity:</label> 
+            <input type="number" class="qty" name="quantity" id="quantity" required>
+            <span id="quantityError" class="error"></span><br> 
+          </p> 
+          
+          <table class="order-table"> 
+            <tr> 
+              <th>Item</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr> 
+            
+            <tr>
+              <td>Mums</td>
+              <td id="price0">$10.00</td>
+              <td><input type="text" class="qty" id="quantity0" name="quantity0"></td>
+              <td id="total0"></td>
+            </tr> 
+            
+            <tr> 
+              <td>Pansies</td>
+              <td id="price1">$15.00</td>
+              <td><input type="text" class="qty" id="quantity1" name="quantity1"></td>
+              <td id="total1"></td>
+            </tr> 
+            
+            <tr> 
+              <td>Ornamental Kale</td> 
+              <td id="price2">$20.00</td>
+              <td><input type="text" class="qty" id="quantity2" name="quantity2"></td>
+              <td id="total2"></td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <fieldset>
+          <legend>Order Summary</legend>
+          <p>Subtotal: <span id="subtotal"></span></p>
+          <p>Tax: <span id="tax"></span></p>
+          <p>Shipping: <span id="shipping"></span></p>
+          <p>Order Total: <span id="orderTotal"></span></p>
+        </fieldset>
+
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
