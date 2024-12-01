@@ -18,6 +18,8 @@ body {
 	padding: 1em;
 	font-family: Arial, Helvetica, sans-serif;
 	overflow: hidden;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
 }
 .error {
 	color: red;
@@ -65,6 +67,13 @@ input[type='submit'] {
 	font-size: .8em;
 	border-radius: 5px;
 	border: thin outset darkgreen;
+	display: block;
+	margin: 1em auto;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+input[type='submit']:hover {
+	background-color: #f0e68c;
 }
 #place {
 	text-align: center;
@@ -88,8 +97,23 @@ input[type='submit'] {
 	background-color: #afeeee;
 	text-align: center;
 }
-nav {
-	text-align: center;
+nav p { 
+	text-align: center; 
+} 
+nav a { 
+	color: darkgreen; 
+	text-decoration: none; 
+	margin: 0 10px; 
+} 
+nav a:hover { 
+	text-decoration: underline;
+}	
+label { 
+	display: inline-block;
+	width: 20em;
+	text-align: right;
+	line-height: 1.5em;
+	padding-right: 1em;
 }
 #pltTitle {
 	color: #07a;
