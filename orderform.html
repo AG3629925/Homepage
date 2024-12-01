@@ -20,7 +20,7 @@
       </p>
     </nav>
     <div id="main">
-      <form name="order" id="orderForm" method="post" action="thanks.html">
+      <form name="order" id="orderForm" method="post" action="path/to/thanks.html">
         <fieldset>
           <legend>Personal Information</legend>
           <p>
@@ -125,21 +125,24 @@
               <td><input type="text" class="qty" id="quantity2" name="quantity2"></td>
               <td id="total2"></td>
             </tr>
-          <tr>
-              <p>Subtotal: <span id="subtotal"></span></p>
-          </tr>
-          <tr>
-              <p>Tax: <span id="tax"></span></p>
-          </tr>
-          <tr>
-              <p>Shipping: <span id="shipping"></span></p>
-          </tr>
-          <tr>
-              <p>Order Total: <span id="orderTotal"></span></p>
-          </tr>
-
-         <button type="submit" id="place">Submit</button>
+            <tr>
+              <td colspan="3">Subtotal:</td> 
+              <td><span id="subtotal"></span></td>
+            </tr>
+            <tr>
+              <td colspan="3">Tax:</td>
+              <td><span id="tax"></span></td>
+            </tr>
+            <tr> 
+              <td colspan="3">Shipping:</td>
+              <td><span id="shipping"></span></td>
+            </tr>
+            <tr>
+              <td colspan="3">Order Total:</td>
+              <td><span id="orderTotal"></span></td>
+            </tr>
           </table>
+          <button type="submit" id="place">Submit</button>
         </fieldset>
       </form>
     </div>
