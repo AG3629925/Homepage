@@ -38,19 +38,19 @@ h1, h2, h3 {
     border-radius: 5px;
 }
 
-.table {
+.order-table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
 }
 
-.table th, .order-table td {
+.order-table th, .order-table td {
     border: 1px solid #ccc;
     padding: 8px;
     text-align: center;
 }
 
-.table th {
+.order-table th {
     background-color: #f2f2f2;
 }
 
