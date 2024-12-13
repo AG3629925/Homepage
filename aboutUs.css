@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background: linear-gradient(to right, #ffecd2, #fcb69f); 
+    color: #333;
 }
 
 header nav ul {
@@ -15,6 +17,9 @@ header nav ul li {
 
 main {
     padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 #funFact {
@@ -33,13 +38,20 @@ form label {
     margin-top: 10px;
 }
 
-form input, form textarea, form button {
-    width:100%;
+form input, form textarea {
+    width: 100%;
     padding: 10px;
     margin-top: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 100px;
 }
 
 form button {
+    width: auto;
+    padding: 10px 20px;
     background-color: #007BFF;
     color: white;
     border: none;
@@ -48,4 +60,9 @@ form button {
 
 form button:hover {
     background-color: #0056b3;
+}
+
+#thankYouMessage {
+    margin-top: 20px;
+    color: green;
 }
