@@ -18,7 +18,7 @@ $(document).ready(function() {
 
   $('#contactForm').submit(function(event) {
     event.preventDefault();
-    $('#thankYouMessage').fadeIn('slow');
+    $('#thankYouMessage').show();
     $(this).trigger("reset");
   });
 });
