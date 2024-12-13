@@ -9,35 +9,34 @@
     <script src="aboutUs.js"></script>
 </head>
 <body>
-	<header>	
+    <header>    
     <nav>
-        <a href="index.html">Home</a> | <a href="quotes.html">Lesson4</a> | <a href="secret-number-game.html">Lesson5</a> | <a href="quiz.html">Lesson6</a> | <a href="trivia.html">Lesson8</a> | <a href="glossary.html">Lesson10</a> |<a href="effects.html">Lesson11</a> | <a href="shopping.html">Lesson12</a> | <a href="gallery.html">Lesson13</a> | <a href="orderform.html">Lesson14</a> | <a href="aboutUs.html">About Us</a>
+        <a href="index.html">Home</a> | <a href="quotes.html">Lesson4</a> | <a href="secret-number-game.html">Lesson5</a> | <a href="quiz.html">Lesson6</a> | <a href="trivia.html">Lesson8</a> | <a href="glossary.html">Lesson10</a> | <a href="effects.html">Lesson11</a> | <a href="shopping.html">Lesson12</a> | <a href="gallery.html">Lesson13</a> | <a href="orderform.html">Lesson14</a> | <a href="aboutUs.html">About Us</a>
     </nav>
-	</header>
-	<main>
-		<h1>About Us</h1>
-		<p>Hello Everyone, I'm Angela Gomez. This class has been an incredible journey, it has helped me to improve my skills in HTML, CSS, and Javascript. And has helped me learn more techniques with jQuery.</p>
-		<p>This class will help me first be able to graduate, and second the skills I have learned will enable me to create user-friendly websites which will allow me to be able to volunteer and help people with my new skills! </p>
+    </header>
+    <main>
+        <h1>About Us</h1>
+        <p>Hello Everyone, I'm Angela Gomez. This class has been an incredible journey, it has helped me to improve my skills in HTML, CSS, and JavaScript. And has helped me learn more techniques with jQuery.</p>
+        <p>This class will help me first be able to graduate, and second the skills I have learned will enable me to create user-friendly websites which will allow me to be able to volunteer and help people with my new skills!</p>
 
+        <button id="factButton">Show Fun Facts</button>
+        <div id="funFact"></div>
 
-		<button id="factButton">Show Fun Facts</button>
-		<div id="funFact"></div>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="thankYouMessage" style="display:none;">Thank you for your message!</div>
+    </main>
 
-		<h2>Contact Us</h2>
-		<form id="contactform">
-			<label for="name">Name:</label>
-			<input type="text" id="name" name="name" required>
-			<label for="email">Email:</label>
-			<input type="email" id="email" name="email" required>
-			<label for="message">Message:</label>
-			<textarea id="message" name="message"></textarea>
-			<button type="submit">Submit</button>
-		</form>
-		<div id="thankYouMessage" style="display:none;">Thank You for your message!</div>
-	</main>
-
-	<footer>
-		<p>&copy; 2024 Angela D. Gomez</p>
-	</footer>
+    <footer>
+        <p>&copy; 2024 Angela D. Gomez</p>
+    </footer>
 </body>
 </html>
